@@ -108,5 +108,34 @@ $(function() {
             }
         });
     }
+    var create_account = document.getElementById('create-account');
+    var share_tile = document.getElementById('share-tile');
+    var near_by = document.getElementById('near_by');
+
+    var dynamic = document.getElementById('dynamic-mockup');
+
+    create_account.onmouseout = function () {
+        dynamic.src = 'images/mockups/1-boot.png';
+    };
+
+    create_account.onmouseover = function () {
+        dynamic.src = 'images/mockups/2-login.png';
+    };
+
+    share_tile.onmouseout = function () {
+        dynamic.src = 'images/mockups/1-boot.png';
+    };
+
+    share_tile.onmouseover = function () {
+        dynamic.src = 'images/mockups/6-post.png';
+    };
+
+    near_by.onmouseout = function () {
+        dynamic.src = 'images/mockups/1-boot.png';
+    };
+
+    near_by.onmouseover = function () {
+        dynamic.src = 'images/mockups/10-feed.png';
+    };
 
 }); /* End Fn */
